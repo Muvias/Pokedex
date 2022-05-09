@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-no-constructed-context-values */
-/* eslint-disable react/destructuring-assignment */
 import { createContext, useEffect, useState } from 'react';
 import { getPokemonData, getPokemons } from '../api';
 
