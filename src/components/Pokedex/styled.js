@@ -32,14 +32,22 @@ export const PokemonContainer = styled.div`
       padding: 5px;
 
       span {
-        font-size: 20px;
-        font-weight: 700;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
         text-transform: capitalize;
 
-        color: #514D58;
+        color: #fff;
       }
 
       .pokemon-type {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 16px;
+        font-weight: 400;
+
         margin-top: 10px;
 
         padding: 5px 10px;
@@ -47,7 +55,7 @@ export const PokemonContainer = styled.div`
         border: 1px solid #eee;
         border-radius: 20px;
 
-        background: #eee;
+        background: #BABABA;
       }
     }
 
@@ -58,7 +66,7 @@ export const PokemonContainer = styled.div`
       width: 100%;
       height: auto;
 
-      .img-container{
+      .img-container {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -78,7 +86,7 @@ export const PokemonContainer = styled.div`
         transition: 0.7s;
       }
       .pokemon-id {
-        color: #6B705C;
+        color: #fff;
 
         position: absolute;
       }
@@ -87,6 +95,42 @@ export const PokemonContainer = styled.div`
 
   .pokemon-container:hover {
     box-shadow: 10px 5px 5px #514D58;
+  }
+
+  .water {
+    background: #0A7DD0;
+  }
+
+  .fire {
+    background: #ff5247;
+  }
+
+  .grass {
+    background: #3EDC4D;
+  }
+
+  .bug {
+    background: #43DD52;
+  }
+
+  .electric {
+    background: #F7DA49;
+  }
+
+  .poison {
+    background: #B149B6;
+  }
+
+  .ground {
+    background: #95533C;
+  }
+
+  .fairy {
+    background: #D077DA;
+  }
+
+  .normal {
+    background: #828080;
   }
 `;
 

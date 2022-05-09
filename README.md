@@ -1,11 +1,70 @@
-Ressaltarei aqui as dificuldades que tive durante o projeto até o momento sendo um iniciante:
-  1º Ao fazer o primeiro map dos pokemons para listar os nomes eu percebi que o restante das informações viriam de outro link da api, portanto eu teria que fazer uma chamada para cada resposta de url que o map me retornasse, e isso foi um conceito novo que eu ainda não tinha visto, apesar da solução não ter sido dificil de encontrar na internet, a ideia por trás foi bem interessante, acredito que seja um dos motivos de terem escolhido essa API como desafio.
+# Getting Started with Create React App
 
-  2º Com certeza a parte que mais me consumiu tempo foi acessar o array mais aninhado dentro da api (o array dos tipos do pokemon), eu conseguia chegar nele com o console se focasse em apenas um pokemon, mas fazer um map deste array dentro de outro map estava sendo meio confuso. Depois de parar um pouco para respirar e tudo mais, eu consegui resolver em algo por volta de 3minutos, no fim das contas era bem simples, eu só estava fazendo do jeito errado.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-  3º Eu separei o header do restante da página para usar como um componente global, e deixei a searchbar dentro do header, por ser desta forma que eu visualizei o projeto ao ver o layout disponibilizado pela Vereda. Isso resultou em que no momento de adicionar a funcionalidade da searchbar, eu não sabia acessar o useState definido no componente da lista de pokemons, me levando a perder um bom tempo procurando como arrumar, mas não soube utilizar nenhuma das formas que vi sobre como deveria ser (usar Context API, Render props ou Redux para definir um state global). A forma que eu "solucionei" foi passar a searchbar para o mesmo componente da listagem, e deixar os dois no mesmo local (eu tenho praticamente certeza que isso é um péssimo jeito de resolver, mas eu estava ficando cada vez mais confuso conforme eu pesquisa).
+## Available Scripts
 
-  4º - (1) Seguindo o layout disponibilizado e a proposta do desafio, eu sabia que teria que setar uma condicional para definir o background color dos cards de acordo com o tipo do pokemon, mas ao tentar fazer isso eu descobri que não tenho a menor ideia de como estabelecer um if dentro do map e que vá ser aplicado na div pai (no caso, o background do container do card, levando em conta que os tipos ficam dentro de outra div para poder arrumar as bordas em volta deles e tudo mais).
-  OBS: muito provavelmente eu estou enxergando a "solução" do jeito errado, por isso não está dando certo.
+In the project directory, you can run:
 
-  4º - (2) Ainda sobre o layout, a img dos pokemons possuem um background, tal qual foi definido direto no css como background específico da imagem, quando tentei implementar a rotação do hover somente no background percebi que a img giraria junto e não achei uma propriedade css que funcionasse apenas em planos de fundos, me levando a crer que teria que usar 2 tags 'imgs', sobrepor uma a outra e então mexer somente na de trás.
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
