@@ -1,9 +1,11 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
+/* eslint-disable react/destructuring-assignment */
 import { createContext, useEffect, useState } from 'react';
 import { getPokemonData, getPokemons } from '../api';
 
 export const PokeContext = createContext();
 
-export function PokeProvider({ children }) {
+export function PokeProvider({children}) {
   const [pokemons, setPokemons] = useState([]);
 
   useEffect(() => {
