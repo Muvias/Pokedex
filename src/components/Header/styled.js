@@ -25,27 +25,3 @@ export const Nav = styled.nav`
     position: absolute;
   }
 `;
-
-export const Input = styled.div`
-  position: relative;
-
-  input {
-    width: 400px;
-
-    padding: .8rem 1rem;
-    padding-right: 1rem;
-    margin-bottom: 10px;
-
-    border: 1px solid #ddd;
-    border-radius: 30px;
-  }
-
-  .lupa {
-    display: block;
-    position: absolute;
-
-    top: 5px;
-    right: 5px;
-    padding: .4rem .6rem;
-  }
-`;

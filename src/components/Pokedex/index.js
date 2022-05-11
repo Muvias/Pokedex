@@ -24,26 +24,8 @@ export default function Pokedex() {
             return pokemon;
           }
         }).map((pokemon) => {
-          let pokemonType = 'normal';
-          if (pokemon.data.types[0].type.name === 'water') {
-            pokemonType = 'water'
-          } if (pokemon.data.types[0].type.name === 'fire') {
-            pokemonType = 'fire'
-          } if (pokemon.data.types[0].type.name === 'grass') {
-            pokemonType = 'grass'
-          } if (pokemon.data.types[0].type.name === 'bug') {
-            pokemonType = 'bug'
-          } if (pokemon.data.types[0].type.name === 'electric') {
-            pokemonType = 'electric'
-          } if (pokemon.data.types[0].type.name === 'ground') {
-            pokemonType = 'ground'
-          } if (pokemon.data.types[0].type.name === 'poison') {
-            pokemonType = 'poison'
-          } if (pokemon.data.types[0].type.name === 'fairy') {
-            pokemonType = 'fairy'
-          }
           return (
-            <div key={String(pokemon.data.name)} className={`pokemon-container ${pokemonType}`}>
+            <div key={String(pokemon.data.name)} className={`pokemon-container ${pokemon.data.types[0].type.name}`}>
               <div className="pokemon-strings-container">
                 <span className="pokemon">{pokemon.data.name}</span>
                 {pokemon.data.types.map((type) => (

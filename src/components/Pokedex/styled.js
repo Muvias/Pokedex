@@ -1,6 +1,34 @@
 import styled from 'styled-components';
 import background from '../../components/images/backCircle.png';
 
+
+export const Input = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  input {
+    width: 400px;
+
+    padding: .8rem 1rem;
+    padding-right: 1rem;
+    margin-bottom: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 30px;
+  }
+
+  .lupa {
+    display: block;
+    position: absolute;
+
+    top: 5px;
+    right: 5px;
+    padding: .4rem .6rem;
+  }
+`;
+
 export const PokemonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -101,6 +129,10 @@ export const PokemonContainer = styled.div`
     background: #0A7DD0;
   }
 
+  .ice {
+    background: #3BA7F3;
+  }
+
   .fire {
     background: #ff5247;
   }
@@ -117,8 +149,16 @@ export const PokemonContainer = styled.div`
     background: #F7DA49;
   }
 
+  .psychic {
+    background: #D1C16C;
+  }
+
   .poison {
     background: #B149B6;
+  }
+
+  .ghost {
+    background: #39153B;
   }
 
   .ground {
@@ -130,33 +170,30 @@ export const PokemonContainer = styled.div`
   }
 
   .normal {
+    background: #9A9999;
+  }
+
+  .fighting {
     background: #828080;
   }
-`;
 
-export const Input = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-  input {
-    width: 400px;
-
-    padding: .8rem 1rem;
-    padding-right: 1rem;
-    margin-bottom: 10px;
-
-    border: 1px solid #ddd;
-    border-radius: 30px;
+  .rock {
+    background: #7F7575;
   }
 
-  .lupa {
-    display: block;
-    position: absolute;
+  .steel {
+    background: #918E8E;
+  }
 
-    top: 5px;
-    right: 5px;
-    padding: .4rem .6rem;
+  .dragon {
+    background: #EED5D5;
+  }
+
+  .flying {
+    background: #E7DCDC;
+  }
+
+  .dark {
+    background: #312F2F;
   }
 `;

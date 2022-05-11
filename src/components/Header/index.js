@@ -4,7 +4,6 @@ import cabeçalho from '../images/top.png';
 import pokebola from '../images/pokeball.png';
 
 export default function Header() {
-
   return (
     <Container>
       <Nav>
