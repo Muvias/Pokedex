@@ -14,15 +14,13 @@ export default function Pokedex() {
       </Input>
       <PokemonContainer>
       {pokemons.filter((pokemon) => {
-          if (search === '') {
-            return pokemon;
-          } if (
+         if (
             pokemon.data.name.toLowerCase().includes(search.toLowerCase())
             || pokemon.data.id === Number(search)
             || pokemon.data.types[0].type.name.toLowerCase().includes(search.toLowerCase())
           ) {
             return pokemon;
-          }
+          } else return "";
         }).map((pokemon) => {
           return (
             <div key={String(pokemon.data.name)} className={`pokemon-container ${pokemon.data.types[0].type.name}`}>

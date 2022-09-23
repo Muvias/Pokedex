@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import background from '../../components/images/backCircle.png';
+import background from '../../utils/images/backCircle.png';
 
 
 export const Input = styled.div`

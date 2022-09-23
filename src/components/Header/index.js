@@ -1,7 +1,7 @@
 import { Container, Nav } from './styled';
 
-import cabeçalho from '../images/top.png';
-import pokebola from '../images/pokeball.png';
+import cabeçalho from '../../utils/images/top.png';
+import pokebola from '../../utils/images/pokeball.png';
 
 export default function Header() {
   return (
