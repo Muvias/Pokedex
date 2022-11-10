@@ -5,7 +5,7 @@ import { getPokemonData, getPokemons } from '../api';
 
 export const PokeContext = createContext();
 
-export function PokeProvider({children}) {
+export function PokeProvider({ children }) {
   const [pokemons, setPokemons] = useState([]);
   const [page, setPage] = useState(0)
   const [totalPages, setTotalPages] = useState(0)
@@ -28,7 +28,7 @@ export function PokeProvider({children}) {
       pokemons, setPokemons,
       page, setPage,
       totalPages, setTotalPages
-      }}>
+    }}>
       {children}
     </PokeContext.Provider>
   );

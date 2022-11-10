@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import background from '../../utils/images/backCircle.png';
 
 
 export const Input = styled.div`
@@ -32,97 +31,108 @@ export const Input = styled.div`
 export const PokemonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
 
-  margin-top: 30px;
+  max-width: 85vw;
 
-  overflow: hidden;
+  gap: 1rem;
+
+  margin: 2rem auto;
 
   .pokemon-container {
     display: flex;
     justify-content: space-between;
 
-    height: 12rem;
-    width: 18%;
-    padding: 10px;
+    width: 14.5rem;
+    height: 11.5rem;
+    padding: 1rem;
 
-    border: 2px solid #eee;
-    border-radius: 20px;
+    border: 1px solid #c3c3c3;
+    border-radius: 1rem;
 
-    margin-left: 10px;
-    margin-bottom: 10px;
+    transition: 0.2s;
 
     .pokemon-strings-container {
-      display: flex;
-      flex-direction: column;
+      max-width: 49%;
 
-      padding: 5px;
+      color: #fff;
 
-      span {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 18px;
+      text-transform: capitalize;
+
+      h2 {
+        font-size: 1.3rem;
         font-weight: 600;
-        text-transform: capitalize;
-
-        color: #fff;
       }
 
       .pokemon-type {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 5rem;
+        padding: 0.1rem;
 
-        font-size: 16px;
-        font-weight: 400;
+        text-align: center;
 
-        margin-top: 10px;
+        margin-top: 0.5rem;
 
-        padding: 5px 10px;
+        border-radius: 1rem;
+        box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
 
-        border: 1px solid #eee;
-        border-radius: 20px;
-
-        background: #BABABA;
+        background-color: rgba(253, 253, 253, 0.3);
       }
     }
 
     .right-container {
       display: flex;
-      justify-content: end;
 
-      width: 100%;
-      height: auto;
+      max-width: 60%;
 
-      .img-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      overflow: hidden;
 
-        width: 10vw;
-      }
+      position: relative;
+
       img {
+        align-self: center;
+      }
+
+      .pokemonImg {
         width: 100%;
         height: auto;
 
-        background-image: url(${background});
-        background-size: 100%;
-        background-repeat: no-repeat;
+        position: absolute;
 
-        position: relative;
+        transition: 0.7s;
+
+        z-index: 99;
+      }
+
+      .backgroundImg {
+        width: 100%;
+        height: auto;
 
         transition: 0.7s;
       }
-      .pokemon-id {
-        color: #fff;
 
+      span {
         position: absolute;
+
+        right: 0;
+
+        color: rgb(255, 255, 255);
+        opacity: 0.8;
       }
     }
   }
 
   .pokemon-container:hover {
-    box-shadow: 10px 5px 5px #514D58;
+    box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .pokemon-container:hover .right-container .pokemonImg {
+    width: 110%;
+  }
+
+  .pokemon-container:hover .right-container .backgroundImg {
+    z-index: 1;
+
+    transform: rotate(-180deg);
   }
 
   .water {
