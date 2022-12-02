@@ -1,7 +1,7 @@
 # Pokedex React
 > Status: online.
 
-> Existe também a branch Main, a qual contém o cótigo react.
+> Existe também a branch Main, a qual contém o código react.
 
 Meu primeiro projeto feito sozinho em React, consumindo a PokeAPI e React Hooks.
 
